@@ -1,7 +1,154 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>SketchUp 筆記</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="sketchup.css">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="menu">
+    <h1><span>SketchUp</span><br/>筆記</h1>
+    <br/>
+    <div class="links">
+        <p><a href="#software">講義、軟體、檔案</a></p>
+        <p><a href="#preferences">偏好設定</a></p>
+        <p><a href="#mouse">滑鼠功能</a></p>
+        <p><a href="#tools">工具</a></p>
+        <p><a href="#texture">材料</a></p>
+        <p><a href="#picture">圖片</a></p>
+        <p><a href="#export">匯出</a></p>
+        <p><a href="#models">模型素材</a></p>
+        <p><a href="#right">右側面板</a></p>
+    </div>
+    <p class="intro"><a href="https://www.sketchup.com/zh-TW">SketchUp</a> 是 3D 建模軟體</p>
+</div>
+
+<div class="content">
+    <h2 id="software">講義、軟體、檔案</h2>
+    <p>老師提供的講義和軟體：<a href="https://drive.google.com/drive/folders/1rIK3pC83DvTWUSz-957Zoh11dLFHLuiM?usp=sharing">雲端硬碟連結</a></p>
+    <p>我目前使用的軟體：<a href="https://www.sketchup.com/zh-TW/try-sketchup">官方的30天試用版</a>
+    ，登入帳號是學校的gmail，期限是12/21</p>
+    <p>副檔名 .skp 是模型的檔案，.skb 是模型的備份檔案</p>
+    <p class="circle"></p>
+    
+    <h2 id="preferences">偏好設定</h2>
+    <p>開啟 SketchUp > 選擇<span>模式</span> > 建築設計cm</p>
+    <p>視窗 > 模型資訊 > <span>單位</span> > 長度選公分 > 精確度選 0.0 cm</p>
+    <p>檢視 > <span>工具列</span> > 入門、大工具集、實心工具 打勾</p>
+    <p>視窗 > 偏好設定 > 一般 > <span>建立備份、自動儲存</span> 打勾</p>
+    <p class="circle"></p>
+
+    <h2 id="mouse">滑鼠功能</h2>
+    <p>按住中鍵 > 移動滑鼠 > <span>旋轉畫面</span></p>
+    <p>按住中鍵和Shift > 移動滑鼠 > <span>平移畫面</span></p>
+    <p>滾動滾輪 > <span>縮放畫面</span></p>
+    <br />
+    <p>按住左鍵 > 移動滑鼠 > 產生選取框</p>
+    <p>從左上到右下的選取框 > 完全在框內的物件才會被選取</p>
+    <p>從右下到左上的選取框 > 有被框到的物件都會被選取</p>
+    <br />
+    <p>按 1 次左鍵 > 選取面</p>
+    <p>按 2 次左鍵 > 選取面+邊</p>
+    <p>按 3 次左鍵 > 選取整個物件</p>
+    <br />
+    <p>選取一個物件 > 按右鍵 > <span>建立元件</span></p>
+    <p>選取多個物件 > 按右鍵 > <span>建立群組</span></p>
+    <p>選取物件 > 按住shift再點擊其他物件 > <span>複選</span></p>
+    <p>疊在一起的未群組圖形或物件會黏在一起</p>
+    <p class="circle"></p>
+    
+    <h2 id="tools">工具</h2>
+    <p><span>矩形</span></p>
+    <p>從任意點按住左鍵拖曳 > 產生矩形</p>
+    <p>點擊任意點 > 輸入 長度,寬度 > 產生 長度x寬度 的矩形</p>
+    <p><span>直線</span></p>
+    <p>點擊任意兩個點就會產生直線</p>
+    <p><span>手繪曲線</span></p>
+    <p>按住滑鼠左鍵並拖曳就會產生手繪曲線</p>
+    <br />
+    <p><span>推拉</span></p>
+    <p>點擊平面圖形 > 移動滑鼠再點擊 或 輸入數值 來設定物件的高度</p>
+    <br />
+    <p><span>移動</span></p>
+    <p>按住並拖曳點或線就可以移動</p>
+    <p>按住群組或元件的紅色加號就可以根據中心軸旋轉</p>
+    <p><span>旋轉</span></p>
+    <p>點擊物件表面當作旋轉參考面 > 點擊任意點產生旋轉參考邊 > 移動滑鼠旋轉物體</p>
+    <p><span>比例</span></p>
+    <p>依據比例縮放高度或物件，不建議使用</p>
+    <br />
+    <p>使用移動、旋轉、比例工具時，按住 ctrl 鍵就可以複製物件</p>
+    <br />
+    <p><span>卷尺</span></p>
+    <p>點擊任意兩個點可以測量長度</p>
+    <p>點擊任意邊、移動滑鼠再點擊可以產生參考線</p>
+    <p>點擊邊上的任意兩點可以沿著邊產生參考線</p>
+    <p><span>偏移</span></p>
+    <p>點擊圖形的邊 > 移動滑鼠再點擊 或 輸入數字 > 向內產生偏移過的圖形</p>
+    <br />
+    <p><span>橡皮擦</span></p>
+    <p>刪除圖形或物件</p>
+    <p><span>文字</span></p>
+    <p>製作文字物件</p>
+    <p><span>縮放</span></p>
+    <p>輸入數字可以設定視角 > 影響畫面的變形程度</p>
+    <br />
+    <p><span>圓形、多邊形</span></p>
+    <p>輸入構成圓形或多邊形的邊數 > 點擊任意點當作圓心 > 移動滑鼠後點擊 或 輸入數字 設定半徑 > 產生圓形或多邊形</p>
+    <br />
+    <p><span>旋轉矩形</span></p>
+    <p>點擊空間中的某個面當作旋轉參考面 > 點擊任意點產生旋轉參考邊 > 移動滑鼠來產生矩形</p>
+    <br />
+    <p><span>圓弧、兩點圓弧、三點圓弧</span></p>
+    <p>產生圓弧</p>
+    <p><span>圓形圖</span></p>
+    <p>產生扇形</p>
+    <br />
+    <p><span>路徑跟隨</span></p>
+    <p>先畫一個圖形和有碰到此圖形的線條 > 選取線條 > 點擊此工具再點擊圖形 > 圖形會沿著線條產生物件</p>
+    <br />
+    <p><span>環顧</span></p>
+    <p>用人類眼睛的高度觀看模型</p>
+    <p><span>行走</span></p>
+    <p>模擬人類走進模型中的視角</p>
+	<p class="circle"></p>
+    
+    <h2 id="texture">材料</h2>
+    <p>用來製作材料的圖片盡量挑純色的、整張圖片的亮度差不多的</p>
+    <p>新增材料：右側面板 > 材料 > 建立材料 > 選擇圖片、設定比例、設定透明度 > 完成</p>
+    <p>使用材料：點擊材料 > 點擊群組過的整個物件或是其中一個面</p>
+    <p class="circle"></p>
+    
+    <h2 id="picture">圖片</h2>
+    <p>在物件上放置圖片的方法有兩種：</p>
+    <p>方法１　在物件上直接放置圖片：從檔案總管中拖曳圖片到要放圖片的表面上</p>
+    <p>方法２　新增薄物件：在物件表面建立一個很薄的物件，建立材料 > 選擇圖片，</p>
+    <p>選擇薄物件的表面 > 把材料加到薄物件的表面</p>
+    <p>可以在薄物件表面按滑鼠右鍵 > 紋理 > 位置 > 調整材料圖片的位置</p>
+    <p class="circle"></p>
+    
+    <h2 id="export">匯出</h2>
+    <p>匯出圖片：檔案 > 匯出 > 2D 圖形 > 選項 > 設定圖片長度與寬度 > 匯出</p>
+    <p>匯出動畫：</p>
+    <p>步驟一：視窗 > 模型資訊 > 統計資訊 > 清除未使用的項目<br />
+    <p>步驟二：檢視 > 動畫 >設定 場景轉換秒數，檔案 > 匯出 > 動畫</p>
+    <p>匯出平面圖：</p>
+    <p>步驟一：鏡頭 > 平行投影，鏡頭 > 標準檢視</p>
+    <p>步驟二：檢視 > 邊線樣式 > 顯示或隱藏邊線，或者也可以使用只顯示邊線的功能</p>
+    <p>步驟三：右側面板 > 場景 > 新增場景，檔案 > 匯出 > 2D圖形</p>
+    <p class="circle"></p>
+    
+    <h2 id="models">模型素材</h2>
+    <p>SketchUp 的模型素材網站：<a href="https://3dwarehouse.sketchup.com">3D Warehouse</a></p>
+    <p class="circle"></p>
+    
+    <h2 id="right">右側面板</h2>
+    <p>實體資訊：選取一個面之後這個面板會顯示材質和面積</p>
+    <p>圖層：新增圖層、隱藏或顯示圖層</p>
+    <p>場景：用縮放工具設定畫面的變形程度、將模型轉到想要的角度、設定要顯示或隱藏的圖層之後再按新增場景，可以勾選或取消勾選"包含在動畫中"，取消勾選的場景名稱前後會有括號</p>
+    <p>陰影：可以設定光線的時間、日期、亮度等</p>
+</div>
 </body>
 </html>

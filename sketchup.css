@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  color: #303030;
+  background-color: white;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0px auto;
+}
+
+h2 {
+  font-size: 27px;
+  margin: 18px 0px;
+}
+
+p, li {
+  font-size: 21px;
+  margin: 6px 0px;
+}
+
+ul, ol {
+  margin: 0px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.menu, .content {
+  margin: 0px;
+}
+
+.menu {
+  width: 25%;
+  height: 100%;
+  padding: 24px 42px;
+  position: fixed;
+  background-color: #f6f6f6;
+}
+
+.links {
+  height: calc(100% - 216px);
+  overflow-y: auto;
+}
+.links p {
+  margin: 12px 0px;
+}
+
+.intro {
+  color: #aaa;
+  position: absolute;
+  bottom: 18px;
+}
+
+a:link, a:visited {
+  color: #303030;
+  text-decoration: none;
+  border-bottom: 3px solid #005f9e;
+  padding: 0px;
+}
+
+a:hover {
+  color: #005f9e;
+  border-bottom: none;
+}
+
+.content {
+  width: 75%;
+  padding: 24px 60px;
+  float: right;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  margin: 30px auto;
+  background-color: #005f9e;
+  opacity: 50%;
+}
+
+.dark, .light {
+  font-family: "Source Code Pro", Consolas, monospace, monospace;
+  margin: 18px 0px;
+  padding: 12px 18px;
+}
+
+.dark {
+  background-color: #303030;
+  color: white;
+}
+
+.light {
+  background-color: #f6f6f6;
+}
+
+span {
+  color: #005f9e;
+}
+
+.com {
+  color: #aaa;
+  font-style: italic;
+}
+
+.ind {
+  text-indent: 5em;
+}
