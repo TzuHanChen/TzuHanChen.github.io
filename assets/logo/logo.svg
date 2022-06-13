@@ -1,0 +1,20 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+	<!-- color -->
+	<!-- white, #b3b3b3 -->
+	<!-- #6f6f6f, #323232 -->
+	<!-- #161616, black -->
+
+	<!-- background -->
+	<rect x="0" y="0" width="600" height="600"
+		fill="black"/>
+
+	<!-- center -->
+	<polygon points="300,90 510,300 300,510 90,300"
+		fill="#323232" stroke-width="21" stroke="#b3b3b3" />
+	<polygon points="300,160 440,300 300,440 160,300"
+		fill="#161616" stroke-width="9" stroke="#6f6f6f" />
+	<polygon points="300,210 390,300 300,390 210,300"
+		fill="black" stroke-width="18" stroke="#323232" />
+	<polygon points="300,279 321,300 300,321 279,300"
+		fill="white" />
+</svg>

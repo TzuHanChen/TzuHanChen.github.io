@@ -1,12 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>TzuHanChen.github.io</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>陳子涵 | 個人網站</title>
 </head>
+
 <body>
-	<h1>Hello World</h1>
-	<p>I'm hosted with GitHub Pages.</p>
+	<nav>
+		<a href=""><img src="assets/logo/logo.svg" alt="logo" class="logo"></a>
+		<ul>
+			<li><a href="#work" class="button mr9">作品</a></li>
+			<li><a href="#note" class="button mr9">筆記</a></li>
+			<li><a href="#about" class="button">關於我</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div class="hero-section">
+			<div class="content">
+				<h1 class="tac">你好，我是<span class="highlight">陳子涵</span></h1>
+				<h2 class="tac">目標是成為前端工程師</h2>
+			</div>
+		</div>
+
+		<section id="work">
+			<div class="content">
+				<h2>作品</h2>
+				<div class="column-area">
+					<div class="column">
+						<img src="assets/Sweetaste.png" alt="甜點列表主視覺">
+						<h3>甜點列表</h3>
+						<p>甜點網路商店的產品列表頁</p>
+						<p><a href="https://codepen.io/tzuhanchen/full/eYELRdB" target="_blank" class="button">作品展示</a></p>
+					</div>
+					<div class="column">
+						<img src="assets/maxValue/maxValue_keyVisual.png" alt="珍食力主視覺">
+						<h3>珍食力</h3>
+						<p>協助使用者充分運用食材的手機應用程式原型</p>
+						<p><a href="maxValue.html" class="button">作品說明</a></p>
+					</div>
+					<div class="column">
+						<img src="assets/medicalForum/medicalForum_keyVisual.png" alt="醫療論壇主視覺">
+						<h3>醫療論壇</h3>
+						<p>供使用者討論醫療相關議題的網站</p>
+						<p><a href="medicalForum.html" class="button">作品說明</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="note">
+			<div class="content">
+				<h2>筆記</h2>
+				<div class="column-area">
+					<div class="column">
+						<h3>版本控制筆記</h3>
+						<ul>
+							<li>Markdown</li>
+							<li>命令列</li>
+							<li>Git 基礎概念、分支、遠端、還原</li>
+							<li>GitHub 基本操作、Pages、協作</li>
+						</ul>
+						<p><a href="https://github.com/TzuHanChen/tzuhanchen.github.io/notes/index.md" target="_blank" class="button">瀏覽筆記</a></p>
+					</div>
+					<div class="column">
+						<h3>CSS 筆記</h3>
+						<ul>
+							<li>Background</li>
+							<li>Flex</li>
+							<li>RWD</li>
+							<li>SASS</li>
+							<li>設計模式</li>
+						</ul>
+						<p><a href="https://codepen.io/collection/MgrNZZ" target="_blank" class="button">瀏覽筆記</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div class="content">
+				<h2>關於我</h2>
+				<p>參與過產品開發流程的各項工作後，我選擇以前端工程為職業，並期許自己能夠利用過往經驗，與來自各領域的同事順利合作。</p>
+				<p><a href="about.html" class="button">詳細自我介紹</a></p>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p><a href="mailto:hahachentzuhan@gmail.com" target="_blank" class="link">hahachentzuhan@gmail.com</a></p>
+		<p>© 2022 陳子涵</p>
+	</footer>
 </body>
 </html>
