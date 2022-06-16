@@ -216,6 +216,14 @@ img {
   height: auto;
 }
 
+.block {
+  display: block;
+}
+
+.m0-a {
+  margin: 0 auto;
+}
+
 .photo {
   margin: 0 auto;
   width: 120px;
