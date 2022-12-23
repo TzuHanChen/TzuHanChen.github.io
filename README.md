@@ -2,4 +2,4 @@
 
 陳子涵的個人網站
 
-[tzuhanchen.github.io](tzuhanchen.github.io)
+[tzuhanchen.github.io](https://tzuhanchen.github.io)
