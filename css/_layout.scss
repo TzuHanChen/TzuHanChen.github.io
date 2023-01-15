@@ -1,0 +1,106 @@
+/* layout */
+$nav-height: 60px;
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: $nav-height;
+	border: none;
+	background-color: $lightGray;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 9px;
+}
+.logo {
+	height: 42px;
+	border-radius: 50%;
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+nav ul li {
+	list-style-type: none;
+}
+
+main {
+	margin: 0;
+	padding-top: $nav-height;
+	background-color: $gray;
+}
+.hero-section {
+	margin-top: 60px;
+	min-height: 300px;
+}
+section {
+	margin: 60px 0;
+	background-color: $lightGray;
+}
+
+.content {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 360px;
+	padding: 30px;
+}
+.grid-area {
+	margin: 48px 0;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 30px;
+}
+.card {
+	border-radius: 24px;
+	background-color: $white;
+	&:hover {
+		box-shadow: 0px 0px 12px $mediumGray;
+	}
+	img {
+		border-radius: 24px;
+	}
+	h3, p {
+		margin-right: 18px;
+		margin-left: 18px;
+	}
+}
+.card-bottom {
+	text-align: right;
+}
+@media (min-width: $breakpoint) {
+	.content {
+		max-width: 960px;
+		padding: 36px 120px;
+	}
+	.grid-area {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 48px;
+	}
+	.card {
+		max-width: 360px;
+	}
+}
+
+.photo {
+	margin: 0 auto;
+	width: 120px;
+}
+.photo img {
+	border-radius: 50%;
+}
+.contact {
+	display: flex;
+	align-items: center;
+}
+.contact img {
+	width: 24px;
+}
+
+footer {
+	background-color: $lightGray;
+	padding: 12px 0;
+	text-align: center;
+}

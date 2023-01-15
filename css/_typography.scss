@@ -1,0 +1,72 @@
+@mixin text($font-size, $font-weight, $line-height) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+}
+
+body {
+	font-family: 'Noto Sans TC', sans-serif;
+	background-color: $gray;
+	color: $darkGray;
+}
+
+h1 {
+	@include text(48px, 700, 60px);
+	margin: 36px 0;
+	@media (min-width: $breakpoint) {
+		@include text(60px, 700, 72px);
+	}
+}
+h2 {
+	@include text(36px, 700, 48px);
+	margin: 24px 0;
+}
+h3 {
+	@include text(24px, 700, 30px);
+	margin: 18px 0;
+}
+
+p {
+	@include text(18px, 300, 30px);
+	margin: 12px 0;
+}
+ul, ol {
+	margin: 0;
+	padding: 0 0 0 24px;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+li {
+	@include text(18px, 300, 24px);
+	margin: 3px 0;
+}
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+.link {
+	border-bottom: 1px solid $teal;
+	color: $darkGray
+}
+.link:hover {
+	background-color: $teal;
+	color: $white;
+}
+.link:active {
+	background-color: $teal;
+	color: $white;
+}
+
+.highlight {
+	color: $teal;
+}
+h1, h2, h3, p, li, a, img, .highlight{
+	&::selection {
+		background-color: $teal;
+		color: $white;
+	}
+}

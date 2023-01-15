@@ -1,0 +1,14 @@
+/* button */
+.button {
+	display: inline-block;
+	padding: 6px 18px;
+	border: 1px solid $verdigris;
+	border-radius: 24px;
+	background-color: $verdigris;
+	color: $white;
+	@include text(18px, 300, 24px);
+}
+.button:active {
+	background-color: $white;
+	color: $darkGray;
+}
