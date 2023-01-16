@@ -53,19 +53,30 @@ section {
 	grid-template-columns: repeat(1, 1fr);
 	gap: 30px;
 }
+
 .card {
 	border-radius: 24px;
 	background-color: $white;
-	&:hover {
-		box-shadow: 0px 0px 12px $mediumGray;
-	}
 	img {
-		border-radius: 24px;
+		border-radius: 24px 24px 0 0;
 	}
 	h3, p {
 		margin-right: 18px;
 		margin-left: 18px;
 	}
+}
+.card:hover {
+	animation-name: cardAddShadow;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+@keyframes cardAddShadow {
+  from {
+	box-shadow: none;
+  }
+  to {
+	box-shadow: -6px -6px 12px $white, 6px 6px 12px rgba($turquoise, $alpha: 0.3);
+  }
 }
 .card-bottom {
 	text-align: right;

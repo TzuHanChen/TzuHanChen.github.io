@@ -1,23 +1,19 @@
 # 未來更新
 
-## favicon
+## 圖示
 
-參考資料：[HTML Favicon](https://www.w3schools.com/html/html_favicon.asp)、[favicon.io](https://favicon.io/)
+利用 FontAwesome 更新現有圖示、製作按鈕
 
-```html
-<head>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">
-</head>
-```
-
----
-
-## 調整網站架構
-
-導入 React ?
+* 聯絡資訊：圖示加文字、圖示按鈕、圖形化展示條
+* 履歷 PDF 檔案：文件
+* 瀏覽網站、作品展示：地球
+* 閱讀日誌：日誌
+* 原始碼：程式碼
+* 使用者體驗文件：流程
+* 介面設計文件：鋼筆
+* 作品說明：放大鏡
+* 詳細自我介紹：人物
+* 返回所有作品：向左箭頭
 
 ---
 
@@ -27,15 +23,11 @@
 
 ---
 
-## 語言
+## 調整網站架構
 
-繁體中文、英文、日文
+導入 React ?
 
-準備英文能力：複習英文書籍、複習中英翻譯教材
-
-準備日文能力：複習日文書籍、複習中階日文（二）
-
-參考資料：Transifex, Lokalise, i18n, l10n
+---
 
 ## 配色
 
@@ -50,3 +42,15 @@ day mode + night mode
 [How to Toggle Between Dark and Light Mode](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp)
 
 [A Complete Guide to Dark Mode on the Web](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
+
+---
+
+## 語言
+
+繁體中文、英文、日文
+
+準備英文能力：複習英文書籍、複習中英翻譯教材
+
+準備日文能力：複習日文書籍、複習中階日文（二）
+
+參考資料：Transifex, Lokalise, i18n, l10n

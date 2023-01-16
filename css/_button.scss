@@ -8,7 +8,19 @@
 	color: $white;
 	@include text(18px, 300, 24px);
 }
-.button:active {
-	background-color: $white;
-	color: $darkGray;
+.button:hover, .button:active {
+	cursor: pointer;
+	animation-name: buttonChangeColor;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
+}
+@keyframes buttonChangeColor {
+  from {
+	background-color: $verdigris;
+	color: $white;
+  }
+  to {
+    background-color: $white;
+    color: $darkGray;
+  }
 }

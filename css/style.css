@@ -80,16 +80,37 @@ a, a:hover, a:active, a:visited {
   color: #303030;
 }
 
-.link:hover {
-  background-color: #008080;
-  color: #FFFFFF;
+.link:hover, .link:active {
+  cursor: pointer;
+  -webkit-animation-name: linkChangeColor;
+          animation-name: linkChangeColor;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-.link:active {
-  background-color: #008080;
-  color: #FFFFFF;
+@-webkit-keyframes linkChangeColor {
+  from {
+    background-color: none;
+    color: #303030;
+  }
+  to {
+    background-color: #008080;
+    color: #FFFFFF;
+  }
 }
 
+@keyframes linkChangeColor {
+  from {
+    background-color: none;
+    color: #303030;
+  }
+  to {
+    background-color: #008080;
+    color: #FFFFFF;
+  }
+}
 .highlight {
   color: #008080;
 }
@@ -168,17 +189,40 @@ section {
   border-radius: 24px;
   background-color: #FFFFFF;
 }
-.card:hover {
-  box-shadow: 0px 0px 12px #CCCCCC;
-}
 .card img {
-  border-radius: 24px;
+  border-radius: 24px 24px 0 0;
 }
 .card h3, .card p {
   margin-right: 18px;
   margin-left: 18px;
 }
 
+.card:hover {
+  -webkit-animation-name: cardAddShadow;
+          animation-name: cardAddShadow;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cardAddShadow {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px rgba(64, 224, 208, 0.3);
+  }
+}
+
+@keyframes cardAddShadow {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px rgba(64, 224, 208, 0.3);
+  }
+}
 .card-bottom {
   text-align: right;
 }
@@ -233,11 +277,37 @@ footer {
   line-height: 24px;
 }
 
-.button:active {
-  background-color: #FFFFFF;
-  color: #303030;
+.button:hover, .button:active {
+  cursor: pointer;
+  -webkit-animation-name: buttonChangeColor;
+          animation-name: buttonChangeColor;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes buttonChangeColor {
+  from {
+    background-color: #40B5AD;
+    color: #FFFFFF;
+  }
+  to {
+    background-color: #FFFFFF;
+    color: #303030;
+  }
+}
+
+@keyframes buttonChangeColor {
+  from {
+    background-color: #40B5AD;
+    color: #FFFFFF;
+  }
+  to {
+    background-color: #FFFFFF;
+    color: #303030;
+  }
+}
 .m0-a {
   margin: 0 auto;
 }

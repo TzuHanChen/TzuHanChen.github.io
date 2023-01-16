@@ -52,13 +52,21 @@ a, a:hover, a:active, a:visited {
 	border-bottom: 1px solid $teal;
 	color: $darkGray
 }
-.link:hover {
-	background-color: $teal;
-	color: $white;
+.link:hover, .link:active {
+	cursor: pointer;
+	animation-name: linkChangeColor;
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards;
 }
-.link:active {
-	background-color: $teal;
-	color: $white;
+@keyframes linkChangeColor {
+	from {
+		background-color: none;
+		color: $darkGray;
+	}
+	to {
+		background-color: $teal;
+		color: $white;
+	}
 }
 
 .highlight {
