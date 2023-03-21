@@ -22,7 +22,7 @@ h1 {
   line-height: 60px;
   margin: 36px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   h1 {
     font-size: 60px;
     font-weight: 700;
@@ -82,23 +82,9 @@ a, a:hover, a:active, a:visited {
 
 .link:hover, .link:active {
   cursor: pointer;
-  -webkit-animation-name: linkChangeColor;
-          animation-name: linkChangeColor;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes linkChangeColor {
-  from {
-    background-color: none;
-    color: #303030;
-  }
-  to {
-    background-color: #008080;
-    color: #FFFFFF;
-  }
+  animation-name: linkChangeColor;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes linkChangeColor {
@@ -125,6 +111,36 @@ h1::selection, h2::selection, h3::selection, p::selection, li::selection, a::sel
   color: #FFFFFF;
 }
 
+/* button */
+.button {
+  display: inline-block;
+  padding: 6px 18px;
+  border: 1px solid #40B5AD;
+  border-radius: 24px;
+  background-color: #40B5AD;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.button:hover, .button:active {
+  cursor: pointer;
+  animation-name: buttonChangeColor;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttonChangeColor {
+  from {
+    background-color: #40B5AD;
+    color: #FFFFFF;
+  }
+  to {
+    background-color: #FFFFFF;
+    color: #008080;
+  }
+}
 /* layout */
 nav {
   position: fixed;
@@ -139,19 +155,36 @@ nav {
   padding: 9px;
 }
 
+@media (min-width: 720px) {
+  .home {
+    display: flex;
+    align-items: center;
+  }
+}
+.home p {
+  margin: 0;
+  display: none;
+}
+@media (min-width: 720px) {
+  .home p {
+    margin-left: 9px;
+    display: block;
+    color: #303030;
+  }
+}
+
 .logo {
-  height: 42px;
+  height: 36px;
   border-radius: 50%;
 }
 
-nav ul {
+.nav-links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
 }
-
-nav ul li {
+.nav-links li {
   list-style-type: none;
 }
 
@@ -174,45 +207,60 @@ section {
 .content {
   margin: 0 auto;
   width: 100%;
-  max-width: 360px;
-  padding: 30px;
+  max-width: 300px;
+  padding: 24px 0;
+}
+@media (min-width: 720px) {
+  .content {
+    max-width: 645px;
+    padding: 36px 0;
+  }
+}
+@media (min-width: 1080px) {
+  .content {
+    max-width: 1020px;
+    padding: 48px 0;
+  }
 }
 
 .grid-area {
-  margin: 48px 0;
+  margin: 48px auto;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
+}
+@media (min-width: 720px) {
+  .grid-area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+  }
+}
+@media (min-width: 1080px) {
+  .grid-area {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
 }
 
 .card {
   border-radius: 24px;
   background-color: #FFFFFF;
+  max-width: 360px;
 }
 .card img {
   border-radius: 24px 24px 0 0;
 }
 .card h3, .card p {
-  margin-right: 18px;
-  margin-left: 18px;
+  margin: 18px;
+}
+.card p {
+  height: 60px;
 }
 
 .card:hover {
-  -webkit-animation-name: cardAddShadow;
-          animation-name: cardAddShadow;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes cardAddShadow {
-  from {
-    box-shadow: none;
-  }
-  to {
-    box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px rgba(64, 224, 208, 0.3);
-  }
+  animation-name: cardAddShadow;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes cardAddShadow {
@@ -223,23 +271,16 @@ section {
     box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px rgba(64, 224, 208, 0.3);
   }
 }
-.card-bottom {
-  text-align: right;
+.text-area {
+  padding: 24px;
+  max-width: 645px;
 }
 
-@media (min-width: 768px) {
-  .content {
-    max-width: 960px;
-    padding: 36px 120px;
-  }
-  .grid-area {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 48px;
-  }
-  .card {
-    max-width: 360px;
-  }
+.button-area {
+  text-align: right;
+  margin: 18px;
 }
+
 .photo {
   margin: 0 auto;
   width: 120px;
@@ -264,50 +305,6 @@ footer {
   text-align: center;
 }
 
-/* button */
-.button {
-  display: inline-block;
-  padding: 6px 18px;
-  border: 1px solid #40B5AD;
-  border-radius: 24px;
-  background-color: #40B5AD;
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 24px;
-}
-
-.button:hover, .button:active {
-  cursor: pointer;
-  -webkit-animation-name: buttonChangeColor;
-          animation-name: buttonChangeColor;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes buttonChangeColor {
-  from {
-    background-color: #40B5AD;
-    color: #FFFFFF;
-  }
-  to {
-    background-color: #FFFFFF;
-    color: #303030;
-  }
-}
-
-@keyframes buttonChangeColor {
-  from {
-    background-color: #40B5AD;
-    color: #FFFFFF;
-  }
-  to {
-    background-color: #FFFFFF;
-    color: #303030;
-  }
-}
 .m0-a {
   margin: 0 auto;
 }

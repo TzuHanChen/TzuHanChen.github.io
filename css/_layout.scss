@@ -1,5 +1,9 @@
 /* layout */
 $nav-height: 60px;
+$card-width: 300px;
+$grid-gap-sm: 30px;
+$grid-gap-md: 45px;
+$grid-gap-lg: 60px;
 
 nav {
 	position: fixed;
@@ -13,18 +17,33 @@ nav {
 	align-items: center;
 	padding: 9px;
 }
+.home {
+	@media (min-width: $breakpoint) {
+		display: flex;
+		align-items: center;
+	}
+	p {
+		margin: 0;
+		display: none;
+		@media (min-width: $breakpoint) {
+			margin-left: 9px;
+			display: block;
+			color: $darkGray;
+		}
+	}
+}
 .logo {
-	height: 42px;
+	height: 36px;
 	border-radius: 50%;
 }
-nav ul {
+.nav-links {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
-}
-nav ul li {
-	list-style-type: none;
+	 li {
+		list-style-type: none;
+	}
 }
 
 main {
@@ -33,36 +52,56 @@ main {
 	background-color: $gray;
 }
 .hero-section {
-	margin-top: 60px;
+	margin-top: $nav-height;
 	min-height: 300px;
 }
 section {
-	margin: 60px 0;
+	margin: $nav-height 0;
 	background-color: $lightGray;
 }
 
 .content {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 360px;
-	padding: 30px;
+	max-width: $card-width;
+	padding: 24px 0;
+	@media (min-width: $breakpoint) {
+		max-width: calc($card-width * 2 + $grid-gap-md);
+		padding: 36px 0;
+	}
+	@media (min-width: $breakpoint2) {
+		max-width: calc($card-width * 3 + $grid-gap-lg * 2);
+		padding: 48px 0;
+	}
 }
+
 .grid-area {
-	margin: 48px 0;
+	margin: 48px auto;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	gap: 30px;
+	gap: $grid-gap-sm;
+	@media (min-width: $breakpoint) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: $grid-gap-md;
+	}
+	@media (min-width: $breakpoint2) {
+		grid-template-columns: repeat(3, 1fr);
+		gap: $grid-gap-lg;
+	}
 }
 
 .card {
 	border-radius: 24px;
 	background-color: $white;
+	max-width: 360px;
 	img {
 		border-radius: 24px 24px 0 0;
 	}
 	h3, p {
-		margin-right: 18px;
-		margin-left: 18px;
+		margin: 18px;
+	}
+	p {
+		height: 60px;
 	}
 }
 .card:hover {
@@ -71,28 +110,23 @@ section {
 	animation-fill-mode: forwards;
 }
 @keyframes cardAddShadow {
-  from {
-	box-shadow: none;
-  }
-  to {
-	box-shadow: -6px -6px 12px $white, 6px 6px 12px rgba($turquoise, $alpha: 0.3);
-  }
+	from {
+		box-shadow: none;
+	}
+	to {
+		box-shadow: -6px -6px 12px $white, 
+		6px 6px 12px rgba($turquoise, 0.3);
+	}
 }
-.card-bottom {
+
+.text-area {
+	padding: 24px;
+	max-width: calc($card-width * 2 + $grid-gap-md);
+}
+
+.button-area {
 	text-align: right;
-}
-@media (min-width: $breakpoint) {
-	.content {
-		max-width: 960px;
-		padding: 36px 120px;
-	}
-	.grid-area {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 48px;
-	}
-	.card {
-		max-width: 360px;
-	}
+	margin: 18px;
 }
 
 .photo {

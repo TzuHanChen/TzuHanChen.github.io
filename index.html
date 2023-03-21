@@ -8,11 +8,13 @@
 	<meta name="title" content="陳子涵 TzuHan_Chen">
 	<meta name="description" content="陳子涵的個人網站">
 
+	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 	<link rel="manifest" href="favicon/site.webmanifest">
 	
+	<!-- font & style -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap" rel="stylesheet">
@@ -21,9 +23,13 @@
 
 <body>
 	<nav>
-		<a href=""><img src="icons/logo.svg" alt="logo" class="logo"></a>
-		<ul>
-			<li><a href="#work" class="button mr9">作品</a></li>
+		<a href="" class="home">
+			<img src="icons/logo.svg" alt="logo" class="logo">
+			<p>陳子涵</p>
+		</a>
+		<ul class="nav-links">
+			<li><a href="#project" class="button mr9">專案</a></li>
+			<li><a href="#article" class="button mr9">文章</a></li>
 			<li><a href="#about" class="button">關於我</a></li>
 		</ul>
 	</nav>
@@ -32,76 +38,97 @@
 		<div class="hero-section">
 			<div class="content">
 				<h1 class="tac">你好，我是<span class="highlight">陳子涵</span></h1>
-				<h2 class="tac">目標是成為前端工程師</h2>
+				<h2 class="tac">現在是前端網頁實習生，目標是成為前端工程師</h2>
 			</div>
 		</div>
 
-		<section id="work">
+		<section id="project">
 			<div class="content">
-				<h2>作品</h2>
+				<h2>專案</h2>
 				<div class="grid-area">
+
 					<div class="card">
-						<img src="images/jerryFriends_keyVisual.png" alt="JerryFriends 主視覺">
-						<h3>JerryFriends</h3>
-						<p>專案展示與團隊建立平台</p>
-						<p class="card-bottom"><a href="https://teamie.tw/" target="_blank" class="button">瀏覽網站</a></p>
+						<img src="images/distraction_keyVisual.png" alt="數位分心主視覺">
+						<h3>數位分心</h3>
+						<p>數位分心教材與研究團隊的網站</p>
+						<div class="button-area">
+							<a href="https://distractionlovesme.lab.nycu.edu.tw/" target="_blank" rel="noreferrer" class="button">瀏覽網站</a>
+						</div>
 					</div>
 					<div class="card">
-						<img src="images/areteInternship_keyVisual.png" alt="亞瑞特實習主視覺">
-						<h3>亞瑞特實習</h3>
-						<p>在亞瑞特實習的期間撰寫的實習日誌</p>
-						<p class="card-bottom">
-							<a href="https://tzuhanchen.github.io/arete-internship" target="_blank" class="button">閱讀日誌</a>
-						</p>
+						<img src="images/teamie_keyVisual.png" alt="Teamie 主視覺">
+						<h3>Teamie</h3>
+						<p>專案團隊媒合平台</p>
+						<div class="button-area">
+							<a href="https://teamie.tw/" target="_blank" rel="noreferrer" class="button">瀏覽網站</a>
+						</div>
 					</div>
 					<div class="card">
 						<img src="images/ticTacToe_keyVisual.png" alt="井字遊戲主視覺">
 						<h3>井字遊戲</h3>
 						<p>可以穿梭時空的井字遊戲</p>
-						<p class="card-bottom">
-							<a href="https://github.com/tzuhanchen/tic-tac-toe" target="_blank" class="button mr9">原始碼</a>
-							<a href="https://tzuhanchen.github.io/tic-tac-toe" target="_blank" class="button">作品展示</a>
-						</p>
+						<div class="button-area">
+							<a href="https://github.com/tzuhanchen/tic-tac-toe" target="_blank" rel="noreferrer" class="button mr9">原始碼</a>
+							<a href="https://tzuhanchen.github.io/tic-tac-toe" target="_blank" rel="noreferrer" class="button">作品展示</a>
+						</div>
 					</div>
-					<!-- <div class="card">
-						<img src="images/bookmark_keyVisual.png" alt="書籤管理主視覺">
-						<h3>書籤管理</h3>
-						<p>自己做的書籤管理系統</p>
-						<p class="card-bottom"><a href="bookmark.html" class="button">作品說明</a></p>
-					</div> -->
 					<div class="card">
 						<img src="images/personalWebsite_keyVisual.png" alt="個人網站預覽圖">
 						<h3>個人網站</h3>
-						<p>展示作品、自我介紹與經歷的網站</p>
-						<p class="card-bottom"><a href="personalWebsite.html" class="button">作品說明</a></p>
+						<p>展示專案、文章與經歷的網站</p>
+						<div class="button-area">
+							<a href="personalWebsite.html" class="button">作品說明</a>
+						</div>
 					</div>
 					<div class="card">
 						<img src="images/maxValue_keyVisual.png" alt="珍食力主視覺">
 						<h3>珍食力</h3>
 						<p>協助使用者充分運用食材的手機應用程式原型</p>
-						<p class="card-bottom"><a href="maxValue.html" class="button">作品說明</a></p>
+						<div class="button-area">
+							<a href="maxValue.html" class="button">作品說明</a>
+						</div>
 					</div>
 					<div class="card">
 						<img src="images/medicalForum_keyVisual.png" alt="醫療論壇主視覺">
 						<h3>醫療論壇</h3>
-						<p>供使用者討論醫療相關議題的網站</p>
-						<p class="card-bottom"><a href="medicalForum.html" class="button">作品說明</a></p>
+						<p>供使用者發文討論醫療相關議題的網站</p>
+						<div class="button-area">
+							<a href="medicalForum.html" class="button">作品說明</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="article">
+			<div class="content">
+				<h2>文章</h2>
+				<div class="grid-area">
+					<div class="card">
+						<img src="images/areteInternship_keyVisual.png" alt="亞瑞特實習主視覺">
+						<h3>亞瑞特實習</h3>
+						<p>在亞瑞特實習的期間撰寫的實習日誌與任務成果</p>
+						<div class="button-area">
+							<a href="https://tzuhanchen.github.io/arete-internship" target="_blank" rel="noreferrer" class="button">閱讀紀錄</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="about">
-			<div class="content">
+			<div class="content text-area">
 				<h2>關於我</h2>
 				<p>參與過產品開發流程的各項工作後，我選擇以前端工程為本人職業，並期許自己能夠利用過往經驗，與來自各領域的同事順利合作。</p>
-				<p><a href="about.html" class="button">詳細自我介紹</a></p>
+				<div class="button-area">
+					<a href="about.html" class="button">詳細自我介紹</a>
+				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<p><a href="mailto:hahachentzuhan@gmail.com" target="_blank" class="link">hahachentzuhan@gmail.com</a></p>
+		<p><a href="mailto:hahachentzuhan@gmail.com" target="_blank" rel="noreferrer" class="link">hahachentzuhan@gmail.com</a></p>
 		<p>© 2023 陳子涵</p>
 	</footer>
 </body>
