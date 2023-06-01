@@ -40,7 +40,7 @@ h2 {
 h3 {
   font-size: 24px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 36px;
   margin: 18px 0;
 }
 
@@ -245,6 +245,7 @@ section {
 .card {
   border-radius: 24px;
   background-color: #FFFFFF;
+  min-width: 300px;
   max-width: 360px;
 }
 .card img {
@@ -272,7 +273,6 @@ section {
   }
 }
 .text-area {
-  padding: 24px;
   max-width: 645px;
 }
 

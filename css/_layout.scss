@@ -93,6 +93,7 @@ section {
 .card {
 	border-radius: 24px;
 	background-color: $white;
+	min-width: $card-width;
 	max-width: 360px;
 	img {
 		border-radius: 24px 24px 0 0;
@@ -120,7 +121,7 @@ section {
 }
 
 .text-area {
-	padding: 24px;
+	// padding: 24px;
 	max-width: calc($card-width * 2 + $grid-gap-md);
 }
 
