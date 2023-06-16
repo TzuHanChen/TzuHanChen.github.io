@@ -273,6 +273,7 @@ section {
   }
 }
 .text-area {
+  padding: 24px;
   max-width: 645px;
 }
 
