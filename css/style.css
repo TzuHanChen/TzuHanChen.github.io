@@ -302,8 +302,6 @@ section {
 
 footer {
   background-color: #F8F8F8;
-  padding: 12px 0;
-  text-align: center;
 }
 
 .m0-a {
@@ -320,4 +318,8 @@ footer {
 
 .tac {
   text-align: center;
+}
+
+.tar {
+  text-align: right;
 }

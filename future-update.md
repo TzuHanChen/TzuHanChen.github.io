@@ -18,6 +18,14 @@
 
 文章區段新增學習資源、活動紀錄等等
 
+[Codepen](https://codepen.io/TzuHanChen)
+
+[Sololearn](https://www.sololearn.com/profile/1183438)
+
+[Codewars](https://www.codewars.com/users/TzuHan_Chen)
+
+[Exercism](https://exercism.org/profiles/TzuHanChen)
+
 ### 設計
 
 全面更新成 Material Design 3
