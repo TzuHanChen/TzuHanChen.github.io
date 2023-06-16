@@ -155,22 +155,14 @@ nav {
   padding: 9px;
 }
 
-@media (min-width: 720px) {
-  .home {
-    display: flex;
-    align-items: center;
-  }
+.home {
+  display: flex;
+  align-items: center;
 }
 .home p {
   margin: 0;
-  display: none;
-}
-@media (min-width: 720px) {
-  .home p {
-    margin-left: 9px;
-    display: block;
-    color: #303030;
-  }
+  margin-left: 9px;
+  color: #303030;
 }
 
 .logo {
@@ -186,6 +178,14 @@ nav {
 }
 .nav-links li {
   list-style-type: none;
+}
+.nav-links li:nth-child(2), .nav-links li:nth-child(3) {
+  display: none;
+}
+@media (min-width: 600px) {
+  .nav-links li:nth-child(2), .nav-links li:nth-child(3) {
+    display: block;
+  }
 }
 
 main {

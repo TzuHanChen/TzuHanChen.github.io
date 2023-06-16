@@ -18,18 +18,12 @@ nav {
 	padding: 9px;
 }
 .home {
-	@media (min-width: $breakpoint) {
-		display: flex;
-		align-items: center;
-	}
+	display: flex;
+	align-items: center;
 	p {
 		margin: 0;
-		display: none;
-		@media (min-width: $breakpoint) {
-			margin-left: 9px;
-			display: block;
-			color: $darkGray;
-		}
+		margin-left: 9px;
+		color: $darkGray;
 	}
 }
 .logo {
@@ -41,8 +35,14 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
-	 li {
+	li {
 		list-style-type: none;
+		&:nth-child(2), &:nth-child(3) {
+			display: none;
+			@media (min-width: 600px) {
+				display: block;
+			}
+		}
 	}
 }
 
