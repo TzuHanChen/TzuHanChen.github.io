@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>API 串接</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="title-area">
+			<h1 class="title">API 串接</h1>
+			<p class="explain">利用三種方法隨機讀取三種 
+				<a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">JSONPlaceholder</a> 
+			的資料</p>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<div class="subtitle-area">
+					<h2 class="subtitle">Ajax</h2>
+					<button id="ajaxRead">讀取文章</button>
+				</div>
+				<div id="post"></div>
+			</div>
+			<div class="column">
+				<div class="subtitle-area">
+					<h2 class="subtitle">Fetch</h2>
+					<button id="fetchRead">讀取事項</button>
+				</div>
+				<div id="todo"></div>
+			</div>
+			<div class="column">
+				<div class="subtitle-area">
+					<h2 class="subtitle">Axios</h2>
+					<button id="axiosRead">讀取用戶</button>
+				</div>
+				<div id="user"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="ajax.js"></script>
+	<script src="fetch.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.3.4/dist/axios.min.js"></script>
+	<script src="axios.js"></script>
+</body>
+</html>
